@@ -2,7 +2,7 @@ node {
    def mvnHome
    stage('Build') {
     
-      git 'https://github.com/masyaka2018/qatestrepo.git'
+      git 'https://github.com/rijeshtomi/cicdpipetest.git'
       mvnHome = tool 'mvn'
       withEnv(["MVN_HOME=$mvnHome"]) {
           sh '"$MVN_HOME/bin/mvn" install'
